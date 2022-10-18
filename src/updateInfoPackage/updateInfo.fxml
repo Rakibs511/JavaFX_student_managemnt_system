@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane_root" prefHeight="795.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="updateInfoPackage.UpdateInfoController">
+   <children>
+      <Label layoutX="188.0" layoutY="36.0" prefHeight="30.0" prefWidth="542.0" text="Search And Update Student's Information" textFill="#868686">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="25.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane_info_root" layoutX="80.0" layoutY="149.0" prefHeight="614.0" prefWidth="370.0">
+         <children>
+            <Label layoutX="6.0" layoutY="69.0" prefHeight="18.0" prefWidth="98.0" text="Sudent's Name :-" textFill="#868686" />
+            <Label layoutX="50.0" layoutY="12.0" prefHeight="27.0" prefWidth="211.0" text="Existing information" textFill="#037626">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Student_Name" layoutX="156.0" layoutY="69.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="101.0" prefHeight="18.0" prefWidth="98.0" text="Sudent's ID :-" textFill="#868686" />
+            <Label fx:id="lbl_Student_ID" layoutX="156.0" layoutY="101.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="133.0" prefHeight="18.0" prefWidth="98.0" text="Date Of Birth :-" textFill="#868686" />
+            <Label fx:id="lbl_DOB" layoutX="156.0" layoutY="133.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="166.0" prefHeight="18.0" prefWidth="98.0" text="Birth Reg. No :-" textFill="#868686" />
+            <Label fx:id="lbl_Birth_Reg_No" layoutX="156.0" layoutY="166.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="199.0" prefHeight="18.0" prefWidth="98.0" text="Age :-" textFill="#868686" />
+            <Label fx:id="lbl_Age" layoutX="156.0" layoutY="199.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="233.0" prefHeight="18.0" prefWidth="98.0" text="Gender :-" textFill="#868686" />
+            <Label fx:id="lbl_Gender" layoutX="156.0" layoutY="233.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="268.0" prefHeight="18.0" prefWidth="98.0" text="Religion :-" textFill="#868686" />
+            <Label fx:id="lbl_Religion" layoutX="156.0" layoutY="268.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="304.0" prefHeight="18.0" prefWidth="98.0" text="Blood Group :-" textFill="#868686" />
+            <Label fx:id="lbl_Blood_Group" layoutX="156.0" layoutY="304.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="340.0" prefHeight="18.0" prefWidth="98.0" text="Mobile Number :-" textFill="#868686" />
+            <Label fx:id="lbl_Mobile_Number" layoutX="156.0" layoutY="340.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="374.0" prefHeight="18.0" prefWidth="98.0" text="Father Name :-" textFill="#868686" />
+            <Label fx:id="lbl_Father_Name" layoutX="156.0" layoutY="374.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="406.0" prefHeight="18.0" prefWidth="98.0" text="Mother Name :-" textFill="#868686" />
+            <Label fx:id="lbl_Mother_Name" layoutX="156.0" layoutY="406.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="438.0" prefHeight="18.0" prefWidth="98.0" text="Father's NID No :-" textFill="#868686" />
+            <Label fx:id="lbl_Father_NID_NO" layoutX="156.0" layoutY="438.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="471.0" prefHeight="18.0" prefWidth="141.0" text="Father's Mobile Number:-" textFill="#868686" />
+            <Label fx:id="lbl_Father_Mobile_No" layoutX="156.0" layoutY="471.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="503.0" prefHeight="18.0" prefWidth="141.0" text="Nationality :-" textFill="#868686" />
+            <Label fx:id="lbl_Nationality" layoutX="156.0" layoutY="503.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label fx:id="lbl_Search_status" alignment="CENTER" layoutX="-77.0" layoutY="-9.0" prefHeight="78.0" prefWidth="524.0" textFill="#f70373">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="33.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_formToggle" buttonType="RAISED" layoutX="135.0" layoutY="557.0" onAction="#FormShowHandle" prefHeight="30.0" prefWidth="78.0" ripplerFill="#f70373" style="-fx-background-color: #037625;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <TextField fx:id="tf_Search_Box" layoutX="156.0" layoutY="88.0" promptText="Student ID" />
+      <Label layoutX="48.0" layoutY="92.0" text="Enter Student ID :" textFill="#868686" />
+      <JFXButton layoutX="306.0" layoutY="88.0" onAction="#searchHandle" ripplerFill="#f80373" style="-fx-background-color: #868686;" text="Search" textFill="WHITE" />
+      <Pane fx:id="pane_Update_Info_root" layoutX="404.0" layoutY="181.0" prefHeight="598.0" prefWidth="332.0">
+         <children>
+            <Label layoutX="65.0" layoutY="-17.0" prefHeight="27.0" prefWidth="211.0" text="Update Information" textFill="#037626">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_Student_Name" layoutX="43.0" layoutY="35.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter New Name" />
+            <TextField fx:id="tf_Student_Id" layoutX="43.0" layoutY="66.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter New ID" />
+            <TextField fx:id="tf_DOB" layoutX="43.0" layoutY="100.0" prefHeight="26.0" prefWidth="258.0" promptText="Date of Birth" />
+            <TextField fx:id="tf_Birth_reg_No" layoutX="43.0" layoutY="133.0" prefHeight="26.0" prefWidth="258.0" promptText="Birth Registration Number" />
+            <TextField fx:id="tf_age" layoutX="43.0" layoutY="165.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Your Age" />
+            <TextField fx:id="tf_Gender" layoutX="43.0" layoutY="199.0" prefHeight="26.0" prefWidth="258.0" promptText="Gender" />
+            <TextField fx:id="tf_Religion" layoutX="43.0" layoutY="233.0" prefHeight="26.0" prefWidth="258.0" promptText="Religion" />
+            <TextField fx:id="tf_blood_Group" layoutX="43.0" layoutY="269.0" prefHeight="26.0" prefWidth="258.0" promptText="Blood Group" />
+            <TextField fx:id="tf_Mobile_number" layoutX="43.0" layoutY="304.0" prefHeight="26.0" prefWidth="258.0" promptText="Enter Your Mobile Number" />
+            <TextField fx:id="tf_Father_name" layoutX="43.0" layoutY="340.0" prefHeight="26.0" prefWidth="258.0" promptText="Your Father Name" />
+            <TextField fx:id="tf_mother_name" layoutX="43.0" layoutY="371.0" prefHeight="26.0" prefWidth="258.0" promptText="Your Mother Name" />
+            <TextField fx:id="tf_father_NID" layoutX="43.0" layoutY="404.0" prefHeight="26.0" prefWidth="258.0" promptText="Father's NID Number" />
+            <TextField fx:id="tf_father_Mobile_number" layoutX="43.0" layoutY="437.0" prefHeight="26.0" prefWidth="258.0" promptText="Father's Mobile Number" />
+            <TextField fx:id="tf_nationality" layoutX="43.0" layoutY="468.0" prefHeight="26.0" prefWidth="258.0" promptText="Your Nationality" />
+            <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="537.0" onAction="#updateHandle" prefHeight="46.0" prefWidth="250.0" ripplerFill="#f70373" style="-fx-background-color: #868686;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

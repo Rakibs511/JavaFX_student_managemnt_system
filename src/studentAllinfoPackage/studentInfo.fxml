@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentAllinfoPackage.StudentInfoController">
+   <children>
+      <TableView fx:id="tableView" prefHeight="558.0" prefWidth="1334.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="col_Student_name" prefWidth="89.60000306367874" text="Student Name" />
+          <TableColumn fx:id="col_Student_id" text="Student ID" />
+            <TableColumn fx:id="col_DoB" prefWidth="88.80000305175781" text="Date Of Birth" />
+            <TableColumn fx:id="col_Birth_reg_no" prefWidth="96.79998779296875" text="Birth Reg. No" />
+            <TableColumn fx:id="col_age" prefWidth="44.0" text="Age" />
+            <TableColumn fx:id="col_gender" prefWidth="61.5999755859375" text="Gender" />
+            <TableColumn fx:id="col_religion" prefWidth="72.0" text="Religion" />
+            <TableColumn fx:id="col_blood_Group" prefWidth="76.79998779296875" text="Blood Group" />
+            <TableColumn fx:id="col_mobile_number" prefWidth="114.39996337890625" text="Mobile Number" />
+            <TableColumn fx:id="col_father_name" prefWidth="103.99993896484375" text="Father Name" />
+            <TableColumn fx:id="col_mother_name" prefWidth="121.5999755859375" text="Mother Name" />
+            <TableColumn fx:id="col_father_NID" prefWidth="133.5999755859375" text="Father NID No." />
+            <TableColumn fx:id="col_father_mobile_number" prefWidth="138.4000244140625" text="Father Mobile Number" />
+            <TableColumn fx:id="col_nationality" prefWidth="112.0" text="Nationality" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

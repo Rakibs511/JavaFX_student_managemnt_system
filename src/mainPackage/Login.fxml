@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="875.0" prefHeight="493.0" prefWidth="875.0" style="-fx-background-color: #F4F4F4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPackage.LoginController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="594.0" layoutX="328.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true" scaleY="1.1">
+         <image>
+            <Image url="@../Assets/login_background.png" />
+         </image>
+         <effect>
+            <Blend mode="COLOR_BURN" opacity="0.15" />
+         </effect>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Label layoutX="57.0" layoutY="70.0" prefHeight="62.0" prefWidth="144.0" text="Student" textFill="#004680">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="114.0" prefHeight="35.0" prefWidth="54.0" text="System" textFill="#f70477">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="70.0" prefHeight="62.0" prefWidth="234.0" text="Management " textFill="#f90373">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="33.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="127.0" layoutY="179.0" prefHeight="274.0" prefWidth="286.0">
+         <children>
+            <Label lineSpacing="7.0" prefHeight="35.0" prefWidth="72.0" text="Login" textFill="#868686">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tf_user_name" prefHeight="35.0" prefWidth="234.0" promptText="User Name">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="tf_password" prefHeight="35.0" prefWidth="234.0" promptText="Password">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="12.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="lbl_Login_Status" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="290.0" textFill="#f90373">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="9.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" onAction="#loginHandle" prefHeight="42.0" prefWidth="144.0" ripplerFill="#f90373" style="-fx-background-color: #868686;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

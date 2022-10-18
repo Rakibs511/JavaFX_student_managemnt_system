@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="686.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homePackage.HomeController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="889.0" prefWidth="186.0" style="-fx-background-color: #FCF1C5;" AnchorPane.bottomAnchor="-202.0" AnchorPane.leftAnchor="-3.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="186.0" text="Home" textFill="#f90373">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="40.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="125.0" onAction="#registrationHandle" prefHeight="70.0" prefWidth="186.0" ripplerFill="#f90373" textFill="WHITE">
+              
+                <tooltip>
+                    <javafx.scene.control.Tooltip text="Registration" /> 
+                </tooltip>
+                <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/user-add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="195.0" onAction="#showAllStudentInfoHandle" prefHeight="70.0" prefWidth="186.0" ripplerFill="#f90373" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Show Student Info" />
+               </tooltip>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/folder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="265.0" onAction="#updateInfoHandle" prefHeight="70.0" prefWidth="186.0" ripplerFill="#f90373" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Update Info" />
+               </tooltip>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/edit-alt.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="335.0" onAction="#deleteinfoHandle" prefHeight="70.0" prefWidth="186.0" ripplerFill="#f90373" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Delete Info" />
+               </tooltip>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutY="616.0" onAction="#createUserHandle" prefHeight="70.0" prefWidth="186.0" ripplerFill="#f90373" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Add User" />
+               </tooltip>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="4.75">
+               <color>
+                  <Color opacity="0.34726443886756897" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+      <Pane fx:id="pane_root_home_tab" layoutX="183.0" prefHeight="686.0" prefWidth="749.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

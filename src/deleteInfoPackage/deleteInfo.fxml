@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane_root" prefHeight="519.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deleteInfoPackage.DeleteInfoController">
+   <children>
+      <TextField fx:id="tf_Search_Box" layoutX="146.0" layoutY="78.0" promptText="Student ID" />
+      <Label layoutX="38.0" layoutY="82.0" text="Enter Student ID :" textFill="#868686" />
+      <JFXButton layoutX="296.0" layoutY="78.0" onAction="#searchHandle" ripplerFill="#f80373" style="-fx-background-color: #868686;" text="Search" textFill="WHITE" />
+      <Pane fx:id="pane_info_root" layoutX="38.0" layoutY="139.0" prefHeight="374.0" prefWidth="402.0" AnchorPane.leftAnchor="38.0">
+         <children>
+            <Label layoutX="6.0" layoutY="69.0" prefHeight="18.0" prefWidth="98.0" text="Sudent's Name :-" textFill="#868686" />
+            <Label layoutX="50.0" layoutY="12.0" prefHeight="27.0" prefWidth="211.0" text="Sudent's Information" textFill="#037626">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Student_Name" layoutX="156.0" layoutY="69.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="93.0" prefHeight="18.0" prefWidth="98.0" text="Sudent's ID :-" textFill="#868686" />
+            <Label fx:id="lbl_Student_ID" layoutX="156.0" layoutY="93.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="119.0" prefHeight="18.0" prefWidth="98.0" text="Date Of Birth :-" textFill="#868686" />
+            <Label fx:id="lbl_DOB" layoutX="156.0" layoutY="119.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="142.0" prefHeight="18.0" prefWidth="98.0" text="Birth Reg. No :-" textFill="#868686" />
+            <Label fx:id="lbl_Birth_Reg_No" layoutX="156.0" layoutY="142.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="164.0" prefHeight="18.0" prefWidth="98.0" text="Age :-" textFill="#868686" />
+            <Label fx:id="lbl_Age" layoutX="156.0" layoutY="164.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="190.0" prefHeight="18.0" prefWidth="98.0" text="Gender :-" textFill="#868686" />
+            <Label fx:id="lbl_Gender" layoutX="156.0" layoutY="190.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="212.0" prefHeight="18.0" prefWidth="98.0" text="Religion :-" textFill="#868686" />
+            <Label fx:id="lbl_Religion" layoutX="156.0" layoutY="212.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="231.0" prefHeight="18.0" prefWidth="98.0" text="Blood Group :-" textFill="#868686" />
+            <Label fx:id="lbl_Blood_Group" layoutX="156.0" layoutY="231.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="250.0" prefHeight="18.0" prefWidth="98.0" text="Mobile Number :-" textFill="#868686" />
+            <Label fx:id="lbl_Mobile_Number" layoutX="156.0" layoutY="250.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="268.0" prefHeight="18.0" prefWidth="98.0" text="Father Name :-" textFill="#868686" />
+            <Label fx:id="lbl_Father_Name" layoutX="156.0" layoutY="268.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="286.0" prefHeight="18.0" prefWidth="98.0" text="Mother Name :-" textFill="#868686" />
+            <Label fx:id="lbl_Mother_Name" layoutX="156.0" layoutY="286.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="306.0" prefHeight="18.0" prefWidth="98.0" text="Father's NID No :-" textFill="#868686" />
+            <Label fx:id="lbl_Father_NID_NO" layoutX="156.0" layoutY="306.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="326.0" prefHeight="18.0" prefWidth="141.0" text="Father's Mobile Number:-" textFill="#868686" />
+            <Label fx:id="lbl_Father_Mobile_No" layoutX="156.0" layoutY="326.0" prefHeight="18.0" prefWidth="211.0" />
+            <Label layoutX="6.0" layoutY="347.0" prefHeight="18.0" prefWidth="141.0" text="Nationality :-" textFill="#868686" />
+            <Label fx:id="lbl_Nationality" layoutX="156.0" layoutY="347.0" prefHeight="18.0" prefWidth="211.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_Remove_Info_root" layoutX="450.0" layoutY="139.0" prefHeight="374.0" prefWidth="402.0" AnchorPane.leftAnchor="450.0">
+         <children>
+            <Label layoutX="53.0" layoutY="14.0" prefHeight="27.0" prefWidth="283.0" text="Remove Student's Information" textFill="#f80373">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="72.0" text="Student's Name :-" textFill="#868686" />
+            <Label fx:id="lbl_show_student_name" layoutX="140.0" layoutY="72.0" prefHeight="17.0" prefWidth="246.0" />
+            <Label layoutX="16.0" layoutY="100.0" text="Student's ID :-" textFill="#868686" />
+            <Label fx:id="lbl_show_student_ID" layoutX="140.0" layoutY="100.0" prefHeight="17.0" prefWidth="246.0" />
+            <JFXButton layoutX="97.0" layoutY="148.0" onAction="#deleteHandle" prefHeight="40.0" prefWidth="211.0" ripplerFill="#5e5d5d" style="-fx-background-color: #F70373;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Roman" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label fx:id="lbl_Search_status" alignment="CENTER" layoutY="158.0" prefHeight="78.0" prefWidth="524.0" textFill="#f70373" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="26.0" prefHeight="30.0" prefWidth="524.0" text="Search And Delete Student's Information" textFill="#868686">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
